@@ -14,6 +14,9 @@
 		6B34711820D161160073B8B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B34711620D161160073B8B6 /* LaunchScreen.storyboard */; };
 		6B34712220D16C480073B8B6 /* LinearRegressionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B34712020D16C480073B8B6 /* LinearRegressionViewController.swift */; };
 		6B34712320D16C480073B8B6 /* LinearRegressionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B34712120D16C480073B8B6 /* LinearRegressionViewController.xib */; };
+		6B34712720D16CE40073B8B6 /* convert_reviews.py in Resources */ = {isa = PBXBuildFile; fileRef = 6B34712520D16CE30073B8B6 /* convert_reviews.py */; };
+		6B34712820D16CE40073B8B6 /* LasVegas-Trip-Dataset.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6B34712620D16CE40073B8B6 /* LasVegas-Trip-Dataset.csv */; };
+		6B34712A20D16E050073B8B6 /* Vegas_Reviews.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B34712920D16E040073B8B6 /* Vegas_Reviews.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		6B34711920D161160073B8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B34712020D16C480073B8B6 /* LinearRegressionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearRegressionViewController.swift; sourceTree = "<group>"; };
 		6B34712120D16C480073B8B6 /* LinearRegressionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinearRegressionViewController.xib; sourceTree = "<group>"; };
+		6B34712520D16CE30073B8B6 /* convert_reviews.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = convert_reviews.py; sourceTree = "<group>"; };
+		6B34712620D16CE40073B8B6 /* LasVegas-Trip-Dataset.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LasVegas-Trip-Dataset.csv"; sourceTree = "<group>"; };
+		6B34712920D16E040073B8B6 /* Vegas_Reviews.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Vegas_Reviews.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +78,21 @@
 		6B34711F20D16C2F0073B8B6 /* LinearRegression */ = {
 			isa = PBXGroup;
 			children = (
+				6B34712420D16CCA0073B8B6 /* Training Material */,
 				6B34712020D16C480073B8B6 /* LinearRegressionViewController.swift */,
 				6B34712120D16C480073B8B6 /* LinearRegressionViewController.xib */,
+				6B34712920D16E040073B8B6 /* Vegas_Reviews.mlmodel */,
 			);
 			path = LinearRegression;
+			sourceTree = "<group>";
+		};
+		6B34712420D16CCA0073B8B6 /* Training Material */ = {
+			isa = PBXGroup;
+			children = (
+				6B34712520D16CE30073B8B6 /* convert_reviews.py */,
+				6B34712620D16CE40073B8B6 /* LasVegas-Trip-Dataset.csv */,
+			);
+			path = "Training Material";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +155,8 @@
 			files = (
 				6B34711820D161160073B8B6 /* LaunchScreen.storyboard in Resources */,
 				6B34711520D161160073B8B6 /* Assets.xcassets in Resources */,
+				6B34712820D16CE40073B8B6 /* LasVegas-Trip-Dataset.csv in Resources */,
+				6B34712720D16CE40073B8B6 /* convert_reviews.py in Resources */,
 				6B34712320D16C480073B8B6 /* LinearRegressionViewController.xib in Resources */,
 				6B34711320D161140073B8B6 /* Main.storyboard in Resources */,
 			);
@@ -153,6 +172,7 @@
 				6B34711020D161130073B8B6 /* ViewController.swift in Sources */,
 				6B34710E20D161130073B8B6 /* AppDelegate.swift in Sources */,
 				6B34712220D16C480073B8B6 /* LinearRegressionViewController.swift in Sources */,
+				6B34712A20D16E050073B8B6 /* Vegas_Reviews.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
