@@ -8,3 +8,8 @@ https://code.tutsplus.com/tutorials/how-to-train-a-core-ml-model-for-an-ios-app-
 ```
 sudo -H pip install --ignore-installed coremltools scikit-learn pandas
 ```
+
+## Usage
+```
+Base on ["Nr. reviews", "Nr. hotel reviews", "Hotel stars"] => Scroe
+```
