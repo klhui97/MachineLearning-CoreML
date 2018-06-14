@@ -1,17 +1,17 @@
 //
-//  RiceSoupClassifierViewController.swift
+//  PlantClassifierViewController.swift
 //  MachineLearningProject
 //
-//  Created by KL on 14/6/2018.
+//  Created by KL on 15/6/2018.
 //  Copyright © 2018 KL. All rights reserved.
 //
 
 import UIKit
 import CoreML
 
-class RiceSoupClassifierViewController: UIViewController {
-
-    let mlModel = RiceSoupClassifier()
+class PlantClassifierViewController: UIViewController {
+    
+    let mlModel = FlowerClassifier()
     
     var importButton:UIButton = {
         let btn = UIButton(type: .system)
@@ -45,25 +45,25 @@ class RiceSoupClassifierViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         importButton.addTarget(self, action: #selector(importFromCameraRoll), for: .touchUpInside)
         self.view.addSubview(previewImg)
         self.view.addSubview(descriptionLbl)
         self.view.addSubview(importButton)
     }
-
+    
 }
 
-extension RiceSoupClassifierViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+extension PlantClassifierViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             previewImg.image = image
             if let buffer = image.buffer(with: CGSize(width:224, height:224)) {
                 guard let prediction = try? mlModel.prediction(image: buffer) else {fatalError("Unexpected runtime error")}
-                descriptionLbl.text = prediction.foodType
-                print("Prediction: \(prediction.foodTypeProbability)")
+                descriptionLbl.text = prediction.flowerType
+                print("Prediction: \(prediction.flowerTypeProbability)")
             }else{
                 print("failed buffer")
             }
