@@ -14,9 +14,10 @@ class ViewController: UIViewController {
     
     enum mlType: String{
         case LinearRegression = "LinearRegression"
+        case ImageClassifierRiceSoup = "ImageClassifierRiceSoup"
     }
     
-    let examples: [mlType] = [.LinearRegression]
+    let examples: [mlType] = [.LinearRegression, .ImageClassifierRiceSoup]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +58,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         switch examples[indexPath.row]{
         case .LinearRegression:
             let vc = LinearRegressionViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case .ImageClassifierRiceSoup:
+            let vc = RiceSoupClassifierViewController()
             navigationController?.pushViewController(vc, animated: true)
         }
     }
