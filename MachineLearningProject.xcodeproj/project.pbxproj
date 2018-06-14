@@ -70,7 +70,7 @@
 		6B34710C20D161130073B8B6 /* MachineLearningProject */ = {
 			isa = PBXGroup;
 			children = (
-				6B59DA6920D2B8AB000839D1 /* Image Classifier */,
+				6B59DA6920D2B8AB000839D1 /* ImageClassifier */,
 				6B34711F20D16C2F0073B8B6 /* LinearRegression */,
 				6B34710D20D161130073B8B6 /* AppDelegate.swift */,
 				6B34710F20D161130073B8B6 /* ViewController.swift */,
@@ -102,14 +102,14 @@
 			path = "Training Material";
 			sourceTree = "<group>";
 		};
-		6B59DA6920D2B8AB000839D1 /* Image Classifier */ = {
+		6B59DA6920D2B8AB000839D1 /* ImageClassifier */ = {
 			isa = PBXGroup;
 			children = (
 				6B59DA6A20D2BD3F000839D1 /* RiceSoupClassifier.mlmodel */,
 				6B59DA6C20D2BD62000839D1 /* RiceSoupClassifierViewController.swift */,
 				6B59DA6D20D2BD62000839D1 /* RiceSoupClassifierViewController.xib */,
 			);
-			path = "Image Classifier";
+			path = ImageClassifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
